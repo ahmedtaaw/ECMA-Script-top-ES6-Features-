@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>top Features as a Branches</title>
 </head>
+
 <body>
     <h1>top Features as a Branches</h1>
+    <h2>Default parameters</h2>
+    <h4>In JavaScript, the default value for function parameters is undefined.</h4>
+    <h4> It may be handy to set a different value instead. This can be achieved with the help of default function
+        parameters.</h4>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p><b>Before ES6,</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
 
+                        function add(num1, num2) { <br>
+                        return num1+num2; <br>
+                        } <br>
+                        add (5,2); //returns 7 <br>
+                        add(3); //returns NaN as num2 is undefined <br>
+
+                    </blockquote>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p><b>With ES6,</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+
+                        function add(num1, num2=10) { <br>
+                        return num1+num2; <br>
+                        } <br>
+                        add (5,2); //returns 7 <br>
+                        add(3) //returns 13 as num2 has default value = 10
+                    </blockquote>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p><b>With ES6, earlier function parameters are available for the later default parameters as well</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote>
+                        function getFullName(firstName, lastName, fullName=lastName+' '+lastName){ <br>
+                            return fullName; <br>
+                           } <br>
+                           getFullName('John','Doe'); // returns John Doe <br>
+                           getFullname('John', 'Doe', 'John Doe'); // returns John Doe <br>
+                    </blockquote>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <script src="script.js"></script>
 </body>
+
 </html>
