@@ -10,73 +10,40 @@
 
 <body>
     <h1>top Features as a Branches</h1>
-    <h2>Default parameters</h2>
-    <h4>In JavaScript, the default value for function parameters is undefined.</h4>
-    <h4> It may be handy to set a different value instead. This can be achieved with the help of default function
-        parameters.</h4>
+    <h2>Template literals (Template strings)</h2>
+    <h4>Template literals are the string literals enclosed by the backtick “(grave accent) and can contain placeholders indicated by dollar sign curly braces.</h4>
+   
     <table>
         <tbody>
             <tr>
                 <td>
-                    <p><b>Before ES6,</b></p>
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <blockquote>
-
-                        function add(num1, num2) { <br>
-                        return num1+num2; <br>
-                        } <br>
-                        add (5,2); //returns 7 <br>
-                        add(3); //returns NaN as num2 is undefined <br>
-
+                        let myName = 'John';<br>
+                        let myRole = 'Software Developer';<br>
+                        console.log(`My name is ${myName} and I am a ${myRole}.`); // <br>
+                        My name is John and I am a Software Developer
                     </blockquote>
                 </td>
             </tr>
         </tbody>
     </table>
+    <h4>Template literals are the string literals enclosed by the backtick “(grave accent) and can contain placeholders indicated by dollar sign curly braces.</h4>
+    <h4>With template literals, multi-line strings can be written as follows,</h4>
     <table>
         <tbody>
-            <tr>
-                <td>
-                    <p><b>With ES6,</b></p>
-                </td>
-            </tr>
             <tr>
                 <td>
                     <blockquote>
 
-                        function add(num1, num2=10) { <br>
-                        return num1+num2; <br>
-                        } <br>
-                        add (5,2); //returns 7 <br>
-                        add(3) //returns 13 as num2 has default value = 10
+                        console.log(`Welcome! <br>
+                        My Name is ${myName} <br>
+                        I am a ${myRole}`); //newline character unnecessary
                     </blockquote>
                 </td>
             </tr>
         </tbody>
     </table>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <p><b>With ES6, earlier function parameters are available for the later default parameters as well</b></p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <blockquote>
-                        function getFullName(firstName, lastName, fullName=lastName+' '+lastName){ <br>
-                            return fullName; <br>
-                           } <br>
-                           getFullName('John','Doe'); // returns John Doe <br>
-                           getFullname('John', 'Doe', 'John Doe'); // returns John Doe <br>
-                    </blockquote>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+   
 
     <script src="script.js"></script>
 </body>
