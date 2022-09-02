@@ -1,3 +1,9 @@
+//*****////Array for of
+const colors = ['red','orange','yellow']
+for (var color of colors) {
+    console.log(color);
+}
+
 //*****////Object.keys(), Object.values(), and Object.entries()
 
 const car2 = {
