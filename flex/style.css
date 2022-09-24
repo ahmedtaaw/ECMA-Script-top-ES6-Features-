@@ -1,0 +1,17 @@
+.container{
+ display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-end;
+ gap:10px
+}
+
+.container section{
+    background-color:cyan;
+    border-radius:5px;
+}
+.container section.box3{
+ background-color:blanchedalmond;
+ align-self:center;
+}
