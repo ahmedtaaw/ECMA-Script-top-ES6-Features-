@@ -7,8 +7,8 @@ import Footer from './Components/Footer';
 function App() {
  return (
   <div>
-    <Head/>
-    <Main/>
+    <Head name="This is title Props" title="this is another title props"/>
+    <Main />
     <Footer/>
   </div>
  )

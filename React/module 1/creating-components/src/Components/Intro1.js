@@ -1,9 +1,10 @@
-function Intro1(){
+function Intro1(props){
     return(
-        <article>
+        <div>
             <h2 className="articleHead">Intro1: Why I love front-end web development</h2>
-            
-        </article>
+            {props.color}
+            {props.number}
+        </div>
     )
 }
 
