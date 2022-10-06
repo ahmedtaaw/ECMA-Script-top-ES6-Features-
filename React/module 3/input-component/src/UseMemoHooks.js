@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useMemo } from 'react';
 import ReactDom from 'react-dom/client'
 function UseMemoHooks(){
     const [count, SetCount] = useState(0);
@@ -13,7 +13,7 @@ function UseMemoHooks(){
         return num;
     }
 
-    const calculation = expensiveCalculation(count);
+    const calculation = useMemo (()=>expensiveCalculation(count),[count]);
 
     const increment = ()=>{
         SetCount((c)=>c+1);
