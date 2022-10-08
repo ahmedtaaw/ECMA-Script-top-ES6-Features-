@@ -8,9 +8,9 @@ function UseCallBack(){
     const increment = ()=>{
         setCount((c)=>c+1);
     }
-    const addTodo= ()=>{
+    const addTodo= useCallback(()=>{
         setTodos((t)=>[...t,"new Todo"])
-    }
+    },[todos])
 
     return(
         <>
