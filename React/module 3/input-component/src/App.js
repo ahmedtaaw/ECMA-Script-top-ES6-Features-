@@ -6,6 +6,7 @@ import UseContextHooks from './UseContextHooks';
 import Component2 from './Component2';
 import UseMemoHooks from './UseMemoHooks';
 import UseMemoHooks2 from './UseMemoHooks2';
+import UseCallBack from './UseCallBack';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Component2/>
       </UseContextHooks>
       
-      <UseMemoHooks/>*/}
-      <UseMemoHooks2/>
+      <UseMemoHooks/>
+      <UseMemoHooks2/>*/}
+      <UseCallBack/>
     </div>
   );
 }
