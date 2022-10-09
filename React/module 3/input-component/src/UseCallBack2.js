@@ -1,6 +1,6 @@
 import React, {useCallback,useState} from "react";
 import Button from "./Button";
-
+//function component
 function UseCallBack2(){
     const [count,setCount] = useState(0)
     function increment(){
@@ -16,6 +16,7 @@ function UseCallBack2(){
         </>
     )
 }
+//class component
 class UseCallBack2_Class extends React.Component {
     state={
         count:0
