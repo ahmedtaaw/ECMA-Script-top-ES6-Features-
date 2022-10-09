@@ -4,13 +4,17 @@ import Button from "./Button";
 function UseCallBack2(){
     const [count,setCount] = useState(0)
     function increment(){
-        setCount(count+1)
+        setCount(s=>s+1)
+        //new state=old state+1
     }
+
+    const incramentCallBack=useCallback(increment,[]);
+
     return(
         <>
         count:{count}
         <hr/>
-        <Button onClick={increment}>
+        <Button onClick={incramentCallBack}>
             Increment
             </Button>
         </>
