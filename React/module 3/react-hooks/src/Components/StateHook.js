@@ -1,4 +1,4 @@
-import React,{useState,useCallback} from 'react';
+import React,{useState,useCallback,useEffect } from 'react';
 
 function StateHooks(){
     const [count,setCount]=useState(0);
@@ -17,7 +17,9 @@ function StateHooks(){
     const addTodos=(e)=>{
         setTodos((d)=>[...d,e]);
     };
-
+    useEffect(()=>{
+        document.title=`you clicked ${count} times`
+    })
     const onPressEnter=(e)=>{
         if(e.key==='Enter'){
             addTodos(e.target.value);
@@ -50,7 +52,7 @@ function StateHooks(){
             </table>
             <hr/>
             <p>press enter to add todo</p>
-            <input  type="text" onKeyDown={onPressEnter} ></input>
+            <input  type="text"  onKeyDown={onPressEnter} ></input>
             <table>
                 <tbody>
                 {todos.map((todo,index)=>{
